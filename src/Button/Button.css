@@ -1,0 +1,24 @@
+.button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: grey;
+  color: white;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.green {
+  background-color: #336600;
+  color: lightgreen;
+}
+
+.red {
+  background-color: darkred;
+  color: red;
+}
+
+.hidden {
+  visibility: "hidden";
+}

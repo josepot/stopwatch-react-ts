@@ -1,0 +1,11 @@
+.wrapper {
+  font-family: "Helvetica Neue Roman";
+  margin-top: 24px;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}

@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Button } from "./Button";
+import { ButtonType } from "./Button/Button";
+import { Lap, LapTable } from "./Laps";
+import { LapType } from "./Laps/Lap";
+import { Timer } from "./Timer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Timer time={10000} />
+      <div className="buttons">
+        <Button>Reset</Button>
+        <Button type={ButtonType.Primary}>Start</Button>
+      </div>
+      <LapTable>
+        <Lap number={1} diffTime={5500} />
+        <Lap number={2} type={LapType.Max} diffTime={6543} />
+        <Lap number={1} type={LapType.Min} diffTime={5432} />
+      </LapTable>
+    </>
   );
 }
 

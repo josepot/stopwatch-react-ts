@@ -1,0 +1,29 @@
+.lap {
+  height: 32px;
+}
+
+.lap td {
+  border-style: solid;
+  border-color: #202020;
+  border-width: 1px 0px;
+}
+
+.lap td:nth-child(odd) {
+  text-align: start;
+}
+
+.lap td:nth-child(even) {
+  text-align: end;
+}
+
+.lap td:nth-child(even).scrollVisible {
+  padding-right: 10px;
+}
+
+.min {
+  color: green;
+}
+
+.max {
+  color: red;
+}
